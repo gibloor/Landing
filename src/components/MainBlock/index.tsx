@@ -48,7 +48,7 @@ const MainBlock = () => {
       </div>
 
       <div className='main-block__scroll_container'>
-        <img src={scrool} className='main-block__scroll' />
+        <img alt="scroll button" src={scrool} className='main-block__scroll' />
       </div>
     </div>
   )
