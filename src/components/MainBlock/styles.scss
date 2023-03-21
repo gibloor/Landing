@@ -1,0 +1,76 @@
+@import '../../App.scss';
+
+.main-block {
+  width: 100vw;
+  height: 100vh;
+  max-height: $height;
+  background: linear-gradient(45deg, rgba(38,0,116,1) 0%, rgba(78,0,98,1) 100%);
+  color: white;
+  clip-path: path("M0 0H1440V612.107C1144.86 612.107 985.922 700 691.977 700C423.567 700 267.216 612.107 0 612.107V0Z");
+  // clip-path: url(#svgPath);
+
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 105px;
+  }
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__links {
+
+  }
+
+  &__link {
+    margin: 20px;
+  }
+
+  &__auth-button {
+    padding: 10px 20px;
+    border: #eb5757 1px solid;
+    border-radius: 50px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 205px);
+  }
+
+  &__content_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__full-color-link {
+    padding: 10px 20px;
+    background-color: #eb5757;
+    border-radius: 50px;
+  }
+
+  &__scroll_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__scroll {
+    margin: 25px;
+    height: 50px;
+  }
+}

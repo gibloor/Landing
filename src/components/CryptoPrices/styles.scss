@@ -1,0 +1,85 @@
+@import '../../App.scss';
+
+.crypto-prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: $height;
+  color: white;
+
+  &__table {
+    // border: 2px solid white;
+    border-collapse: collapse; 
+  }
+
+  &__table:last-child {
+    border-bottom: 0.6px solid #BDBDBD;
+
+  }
+
+  &__table > tr {
+    border-top: 0.6px solid #BDBDBD;
+  }
+
+  &__table > tr > th {
+    padding: 25px 0px 25px 65px;
+    text-align: left;
+  }
+
+  &__table > tr > th:first-child, th:nth-child(2) {
+    padding-left: 10px;
+  }
+
+  &__table > tr > th:nth-child(3) {
+    padding-left: 30px;
+  }
+
+  &__with-picture_container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__coin_picture {
+    margin-right: 10px;
+  }
+
+  &__arrow-little {
+    width: 5.33px;
+    height: 4px;
+    margin-left: 3px;
+  }
+
+  &__arrow-big {
+    width: 7.76px;
+    height: 6px;
+    margin-right: 5px;
+  }
+
+  &__growth {
+    color: #1aff7c;
+  }
+
+  &__decline {
+    color: #ff1a1a;
+  }
+
+  &__volume_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__converted_volume {
+    font-size: 11px;
+    color: #828282;
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+  }
+
+  &__information_button {
+    margin-left: 10px;
+  }
+}
