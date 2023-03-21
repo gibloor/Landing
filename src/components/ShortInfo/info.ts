@@ -1,4 +1,4 @@
-const shortInfo = [
+const info = [
   {
     name: 'EaseOfTrading',
     title: 'Ease of Trading',
@@ -28,4 +28,4 @@ const shortInfo = [
   },
 ];
 
-export default shortInfo;
+export default info;
