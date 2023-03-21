@@ -21,12 +21,12 @@ const AppAdvertising = () => {
         </span>
 
         <div>
-          <img src={appStore} />
-          <img src={googlePlay} />
+          <img alt='App store button' src={appStore} />
+          <img alt='Google play button' src={googlePlay} />
         </div>
       </div>
 
-      <img src={phones} />
+      <img alt='Two phones' src={phones} />
     </div>
   )
 }
