@@ -9,30 +9,28 @@
   height: $height;
   color: white;
 
-  &__table {
-    // border: 2px solid white;
+  &__table, &__tbody {
     border-collapse: collapse; 
   }
 
-  &__table:last-child {
+  &__tbody:last-child {
     border-bottom: 0.6px solid #BDBDBD;
-
   }
 
-  &__table > tr {
+  &__tbody > tr {
     border-top: 0.6px solid #BDBDBD;
   }
 
-  &__table > tr > th {
+  &__tbody > tr > th {
     padding: 25px 0px 25px 65px;
     text-align: left;
   }
 
-  &__table > tr > th:first-child, th:nth-child(2) {
+  &__tbody > tr > th:first-child, th:nth-child(2) {
     padding-left: 10px;
   }
 
-  &__table > tr > th:nth-child(3) {
+  &__tbody > tr > th:nth-child(3) {
     padding-left: 30px;
   }
 

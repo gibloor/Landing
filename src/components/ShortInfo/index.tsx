@@ -7,20 +7,22 @@ const ShortInfo = () => {
 
   return (
     <div className='short-info'>
-      <span>
+      <span className='headline short-infp__title'>
         The most trusted cryptocurrency platform
       </span>
 
-      <div>
+      <div className='short-info__paragraphs'>
         {paragraphs.map(paragraph => (
-          <div>
-            <img alt={paragraph.title} src={`./shortInfo/${paragraph.name}.png`} />
+          <div key={paragraph.name} className='short-info__paragraph'>
+            <div className='short-info__paragraph_picture_container'>
+              <img alt={paragraph.title} className='short-info__paragraph_picture' src={process.env.PUBLIC_URL + `/shortInfo/${paragraph.name}.png`} />
+            </div>
             <span>
               {paragraph.title}
             </span>
 
             {paragraph.items.map(item => (
-              <span>
+              <span key={item}>
                 {item}
               </span>
             ))}
