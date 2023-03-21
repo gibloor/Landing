@@ -1,4 +1,4 @@
-const info = [
+const paragraphs = [
   {
     name: 'EaseOfTrading',
     title: 'Ease of Trading',
@@ -28,4 +28,4 @@ const info = [
   },
 ];
 
-export default info;
+export default paragraphs;
