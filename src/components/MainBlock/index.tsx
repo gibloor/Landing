@@ -13,19 +13,24 @@ const MainBlock = () => {
   return (
     <div className='main-block'>
       <div className='main-block__header'>
-        <img alt="logo" src={logo} className='main-block__logo' />
+        <a href='./'>
+          <img alt="logo" src={logo} className='main-block__logo' />
+        </a>
 
         <div className='main-block__links'>
           {headerButtons.map(button => (
-            <span key={button} className='main-block__link label'>
-              {button}
-            </span>
+            <a href='./' key={button}>
+              <span className='main-block__link label'>
+                {button}
+              </span>
+            </a>
           ))}
         </div>
-
-        <span className='main-block__auth-button label'>
-          Trade Now
-        </span>
+        <a href='./'>
+          <span className='main-block__auth-button label'>
+            Trade Now
+          </span>
+        </a>
       </div>
 
       <div className='main-block__content'>
@@ -39,9 +44,11 @@ const MainBlock = () => {
             It plans to leverages blockchain technology.
           </span>
 
-          <span className='main-block__full-color-link'>
-            Get whitelisted
-          </span>
+          <a href='./'>
+            <span className='main-block__full-color-link'>
+              Get whitelisted
+            </span>
+          </a>
         </div>
 
         <img alt='bitcoin stand' src={bitcoinStand} />

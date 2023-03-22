@@ -15,11 +15,11 @@
     display: flex;
   }
 
-  &__container > div {
+  &__container > a > div {
     margin-right: 33px;
   }
 
-  &__container:last-child {
+  &__container:last-child > div {
     margin-right: 0px;
   }
 

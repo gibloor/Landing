@@ -1,16 +1,23 @@
-@import '../../App.scss';
-
 .crypto-prices {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: $height;
+  height: 800px;
   color: white;
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
 
   &__table, &__tbody {
     border-collapse: collapse; 
+  }
+
+  &__tbody:first-child > tr {
+    text-align: center;
   }
 
   &__tbody:last-child {
@@ -28,6 +35,10 @@
 
   &__tbody > tr > th:first-child, th:nth-child(2) {
     padding-left: 10px;
+  }
+  &__tbody > tr > th:last-child {
+    // padding-left: 10px;
+    padding-right: 10px;
   }
 
   &__tbody > tr > th:nth-child(3) {
@@ -79,5 +90,15 @@
 
   &__information_button {
     margin-left: 10px;
+  }
+
+  &__stock_container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__stock {
+    margin-right: 20px;
   }
 }

@@ -32,9 +32,23 @@
   &__input {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    color: #FFFFFF;
+    outline: none;
+    width: 70%;
   }
 
   &__button {
     font-size: 17px;
+    background: #EB5757;
+    color: #FFFFFF;
+    border-radius: 37px;
+    height: calc(100% - 6px);
+    padding: 0px 26.5px;
+    margin: 3px;
+    border: none;
+    cursor: pointer;
   }
 }

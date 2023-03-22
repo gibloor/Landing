@@ -21,9 +21,11 @@ const Footer = () => {
             </span>
 
             {column.paragraphs.map(paragraph => (
-              <span key={paragraph} className='footer__paragraph'>
-                {paragraph}
-              </span>
+              <a href='./' key={paragraph} className='footer__paragraph'>
+                <span>
+                  {paragraph}
+                </span>
+              </a>
             ))}
           </div>
         ))}
@@ -32,10 +34,21 @@ const Footer = () => {
       <div className='footer__footer' style={{ width: `${columns.length * 250}px` }}>
         <span className='footer__paragraph'> Copyright 2021, Cryptous </span>
         <div className='footer__social_media'>
-          <img src={facebook} />
-          <img src={twitter} />
-          <img src={linkedIn} />
-          <img src={instagram} />
+          <a href='./'>
+            <img src={facebook} />
+          </a>
+
+          <a href='./'>
+            <img src={twitter} />
+          </a>
+
+          <a href='./'>
+            <img src={linkedIn} />
+          </a>
+
+          <a href='./'>
+            <img src={instagram} />
+          </a>
         </div>
       </div>
 

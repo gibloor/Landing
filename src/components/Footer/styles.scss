@@ -20,7 +20,7 @@
     flex-direction: column;
   }
 
-  &__paragraphs_block > span {
+  &__paragraphs_block > a, span {
     margin-bottom: 32px;
   }
 
@@ -45,7 +45,7 @@
     justify-content: space-between;
   }
 
-  &__social_media > img {
+  &__social_media > a {
     margin-left: 15px;
   }
 }

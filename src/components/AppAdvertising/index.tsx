@@ -21,11 +21,11 @@ const AppAdvertising = () => {
         </span>
 
         <div className='app-advertising__buttons'>
-          <a className='app-advertising__button'>
+          <a href='./' className='app-advertising__button'>
             <img alt='App store button' src={appStore} />
           </a>
 
-          <a>
+          <a href='./'>
             <img alt='Google play button' src={googlePlay} />
           </a>
         </div>

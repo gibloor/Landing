@@ -4,21 +4,24 @@ import cryptoPricesData from './cryptoPricesData';
 
 import info from './pictures/info.svg';
 import arrowUp from './pictures/arrowUp.svg';
+import clearArrowUp from './pictures/clearArrowUp.svg';
 import arrowDown from './pictures/arrowDown.svg';
 import star from './pictures/star.svg';
 import dots from './pictures/dots.svg';
+import badStock from './pictures/badStock.svg';
+import goodStock from './pictures/goodStock.svg';
 
 import './styles.scss';
 
 const CryptoPrices = () => {
 
   const USDFormat = (price: number) => {
-    return new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'USD' }).format(price)
+    return new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'USD' }).format(price);
   }
 
   return (
     <div className='crypto-prices'>
-      <span className='contents-table'>
+      <span className='headline crypto-prices__title'>
         Today`s Cryptocurrency prices
       </span>
 
@@ -29,7 +32,7 @@ const CryptoPrices = () => {
             <th>
               <div className='crypto-prices__with-picture_container'>
                 <span> # </span>
-                <img alt='arrow' src={arrowUp} className='crypto-prices__arrow-little' />
+                <img alt='arrow' src={clearArrowUp} className='crypto-prices__arrow-little' />
               </div>
             </th>
             <th> Name </th>
@@ -56,7 +59,6 @@ const CryptoPrices = () => {
 
               <th>
                 <div className='crypto-prices__with-picture_container'>
-                  
                   <img alt='coin' src={process.env.PUBLIC_URL + `/cryptoPrices/${crypto.name}.png`} className='crypto-prices__coin_picture' />
                   {crypto.name}
                 </div>
@@ -93,8 +95,10 @@ const CryptoPrices = () => {
               </th>
 
               <th>
-                <span> graphic </span>
-                <img alt='dots' src={dots} />
+                <div className='crypto-prices__stock_container'>
+                  <img className='crypto-prices__stock' src={crypto.weeklyChanges >= 0 ? goodStock : badStock} />
+                  <img alt='dots' src={dots} />
+                </div>
               </th>
             </tr>
           ))}
