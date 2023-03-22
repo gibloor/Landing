@@ -1,8 +1,12 @@
+import React from 'react';
+
 import AppAdvertising from 'components/AppAdvertising';
+import Articles from 'components/Articles';
 import CryptoPrices from 'components/CryptoPrices';
 import MainBlock from 'components/MainBlock';
 import ShortInfo from 'components/ShortInfo';
-import React from 'react';
+import SubscribeField from 'components/SubscribeField';
+import Footer from 'components/Footer';
 
 import './App.scss';
 
@@ -13,6 +17,9 @@ function App() {
       <CryptoPrices />
       <ShortInfo />
       <AppAdvertising />
+      <Articles />
+      <SubscribeField />
+      <Footer />
     </div>
   );
 }

@@ -3,5 +3,25 @@
   height: 700px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   color: white;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    max-width: 45%;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    margin-right: 30px;
+  }
 }

@@ -7,7 +7,7 @@ const ShortInfo = () => {
 
   return (
     <div className='short-info'>
-      <span className='headline short-infp__title'>
+      <span className='headline short-info__title'>
         The most trusted cryptocurrency platform
       </span>
 
