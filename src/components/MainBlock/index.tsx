@@ -7,11 +7,12 @@ import scrool from './pictures/scrool.png';
 import './styles.scss';
 
 const MainBlock = () => {
-
-  const headerButtons = ['Home', 'Company', 'About', 'Pricing', 'Team', 'Contact', 'Blog']
+  const headerButtons = ['Home', 'Company', 'About', 'Pricing', 'Team', 'Contact', 'Blog'];
 
   return (
     <div className='main-block'>
+
+
       <div className='main-block__header'>
         <a href='./'>
           <img alt="logo" src={logo} className='main-block__logo' />

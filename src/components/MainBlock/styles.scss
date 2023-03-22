@@ -2,12 +2,11 @@
 
 .main-block {
   width: 100vw;
-  height: 100vh;
-  max-height: $height;
-  background: linear-gradient(45deg, rgba(38,0,116,1) 0%, rgba(78,0,98,1) 100%);
+  height: $height;
   color: white;
-  clip-path: path("M0 0H1440V612.107C1144.86 612.107 985.922 700 691.977 700C423.567 700 267.216 612.107 0 612.107V0Z");
-  // clip-path: url(#svgPath);
+  background: url('./pictures/bg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
 
   &__header {
     display: flex;
