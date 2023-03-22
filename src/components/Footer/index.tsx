@@ -35,19 +35,19 @@ const Footer = () => {
         <span className='footer__paragraph'> Copyright 2021, Cryptous </span>
         <div className='footer__social_media'>
           <a href='./'>
-            <img src={facebook} />
+            <img alt='facebook' src={facebook} />
           </a>
 
           <a href='./'>
-            <img src={twitter} />
+            <img alt='twitter' src={twitter} />
           </a>
 
           <a href='./'>
-            <img src={linkedIn} />
+            <img alt='linkedIn' src={linkedIn} />
           </a>
 
           <a href='./'>
-            <img src={instagram} />
+            <img alt='instagram' src={instagram} />
           </a>
         </div>
       </div>

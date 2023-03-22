@@ -96,7 +96,7 @@ const CryptoPrices = () => {
 
               <th>
                 <div className='crypto-prices__stock_container'>
-                  <img className='crypto-prices__stock' src={crypto.weeklyChanges >= 0 ? goodStock : badStock} />
+                  <img alt='stock' className='crypto-prices__stock' src={crypto.weeklyChanges >= 0 ? goodStock : badStock} />
                   <img alt='dots' src={dots} />
                 </div>
               </th>
