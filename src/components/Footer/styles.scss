@@ -1,6 +1,6 @@
 .footer {
-  width: 100vw;
-  height: 540px;
+  width: 90vw;
+  padding: 50px 5vw;
   background: linear-gradient(45deg, rgba(38,0,116,1) 0%, rgba(78,0,98,1) 100%);
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -9,8 +9,10 @@
   flex-direction: column;
 
   &__paragraphs {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-bottom: 32px;
     border-bottom: 1px solid #BCBCBC;
   }
@@ -18,14 +20,11 @@
   &__paragraphs_block {
     display: flex;
     flex-direction: column;
+    padding: 0 25px;
   }
 
   &__paragraphs_block > a, span {
     margin-bottom: 32px;
-  }
-
-  &__paragraphs_bloc:last-child {
-    margin-bottom: 0px;
   }
 
   &__title {
@@ -39,7 +38,8 @@
     color: #E6E6E6;
   }
 
-  &__footer {
+  &__block {
+    width: 100%;
     margin-top: 45px;
     display: flex;
     justify-content: space-between;
@@ -47,5 +47,17 @@
 
   &__social_media > a {
     margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    &__paragraph {
+      font-size: 14px;
+    }
+
+    &__paragraphs_block {
+      margin-bottom: 30px;
+    }
   }
 }

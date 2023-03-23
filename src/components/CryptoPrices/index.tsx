@@ -28,73 +28,72 @@ const CryptoPrices = () => {
       <table className='crypto-prices__table table-text'>
         <tbody className='crypto-prices__tbody'>
           <tr>
-            <th />
-            <th>
+            <th className='crypto-prices__1200hide' />
+            <th className='crypto-prices__1200hide'>
               <div className='crypto-prices__with-picture_container'>
                 <span> # </span>
                 <img alt='arrow' src={clearArrowUp} className='crypto-prices__arrow-little' />
               </div>
             </th>
-            <th> Name </th>
+            <th className='crypto-prices__name_tr'> Name </th>
             <th> Price </th>
-            <th> 24h % </th>
-            <th> 7d % </th>
-            <th>
+            <th className='crypto-prices__900hide'> 24h % </th>
+            <th className='crypto-prices__900hide'> 7d % </th>
+            <th className='crypto-prices__500hide'>
               <div className='crypto-prices__with-picture_container'>
                 Market Cap <img alt='information button' className='crypto-prices__information_button' src={info} />
               </div>
             </th>
-            <th> volume(24h) </th>
-            <th> Last 7 days </th>
+            <th className='crypto-prices__700hide'> Volume(24h) </th>
+            <th className='crypto-prices__1200hide'> Last 7 days </th>
           </tr>
 
           {cryptoPricesData.map((crypto, index) => (
             <tr key={index}>
-              <th>
+              <th className='crypto-prices__1200hide'>
                 <img alt='star' src={star} />
                 {crypto.favorite}
               </th>
 
-              <th> {index + 1} </th>
+              <th className='crypto-prices__1200hide'> {index + 1} </th>
 
-              <th>
-                <div className='crypto-prices__with-picture_container'>
+              <th className='crypto-prices__first-rate_tr'>
+                <div className='crypto-prices__with-picture_container crypto-prices__name_tr'>
                   <img alt='coin' src={process.env.PUBLIC_URL + `/cryptoPrices/${crypto.name}.png`} className='crypto-prices__coin_picture' />
                   {crypto.name}
                 </div>
-                
               </th>
 
               <th> {USDFormat(crypto.price)} </th>
 
-              <th>
+              <th className='crypto-prices__900hide'>
                 <div className={`crypto-prices__with-picture_container ${crypto.dailyChanges >= 0 ? 'crypto-prices__growth' : 'crypto-prices__decline'}`}>
                   <img alt='arrow' src={crypto.dailyChanges >= 0 ? arrowUp : arrowDown} className='crypto-prices__arrow-big' />
                   {Math.abs(crypto.dailyChanges)}%
                 </div>
               </th>
 
-              <th>
+              <th className='crypto-prices__900hide'>
                 <div className={`crypto-prices__with-picture_container ${crypto.weeklyChanges >= 0 ? 'crypto-prices__growth' : 'crypto-prices__decline'}`}>
                   <img alt='arrow' src={crypto.weeklyChanges >= 0 ? arrowUp : arrowDown} className='crypto-prices__arrow-big' />
                   {Math.abs(crypto.weeklyChanges)}%
                 </div>
               </th>
 
-              <th> {USDFormat(crypto.marketCap)} </th>
+              <th className='crypto-prices__500hide'> {USDFormat(crypto.marketCap)} </th>
 
-              <th>
+              <th className='crypto-prices__700hide'>
                 <div className='crypto-prices__volume_container'>
-                  <span>
-                    {USDFormat(crypto.volume)}
-                  </span>
-                  <span className='crypto-prices__converted_volume'>
-                    {Intl.NumberFormat('ja-JP', {}).format(crypto.volume / crypto.price)} {crypto.abbreviation}
-                  </span>
+                  <div className='crypto-prices__volume_block'>
+                    <span> {USDFormat(crypto.volume)} </span>
+                    <span className='crypto-prices__converted_volume'>
+                      {Intl.NumberFormat('en-IN', { maximumSignificantDigits: 10 }).format(crypto.volume / crypto.price)} {crypto.abbreviation}
+                    </span>
+                  </div>
                 </div>
               </th>
 
-              <th>
+              <th className='crypto-prices__1200hide'>
                 <div className='crypto-prices__stock_container'>
                   <img alt='stock' className='crypto-prices__stock' src={crypto.weeklyChanges >= 0 ? goodStock : badStock} />
                   <img alt='dots' src={dots} />

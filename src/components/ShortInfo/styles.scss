@@ -1,6 +1,6 @@
 .short-info {
-  width: 100vw;
-  height: 575px;
+  width: 90vw;
+  padding: 5vw;
   background-color: #fff6fb;
   color: #000000;
   display: flex;
@@ -9,6 +9,8 @@
   align-items: center;
 
   &__title {
+    font-size: 32px;
+    font-weight: 700;
     color: #171717;
     margin-bottom: 60px;
   }
@@ -16,7 +18,7 @@
   &__paragraphs {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   &__paragraph {
@@ -35,5 +37,41 @@
 
   &__paragraph_picture {
     height: 100%;
+  }
+
+  &__paragraph_title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__paragraph_text {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .short-info {
+    text-align: center;
+
+    &__paragraphs {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #171717;
+      margin-bottom: 60px;
+    }
+
+    &__paragraph_title {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  
+    &__paragraph_text {
+      font-size: 14px;
+    }
   }
 }

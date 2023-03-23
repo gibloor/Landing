@@ -1,8 +1,9 @@
 @import '../../App.scss';
 
 .main-block {
-  width: 100vw;
+  width: 90vw;
   height: $height;
+  padding: 0 5vw;
   color: white;
   background: url('./pictures/bg.svg');
   background-repeat: no-repeat;
@@ -10,9 +11,10 @@
 
   &__header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 105px;
+    width: 100%;
   }
 
   &__logo {
@@ -33,9 +35,17 @@
     border-radius: 50px;
   }
 
+  &__auth-link {
+
+  }
+
+  &__hamburger-button {
+    display: none;
+  }
+
   &__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: calc(100% - 205px);
@@ -45,6 +55,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 40%;
+  }
+
+  &__content_picture {
     width: 40%;
   }
 
@@ -71,5 +85,27 @@
   &__scroll {
     margin: 25px;
     height: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-block {
+    &__links {
+      display: none;
+    }
+
+    &__auth-link {
+      display: none;
+    }
+
+    &__hamburger-button {
+      display: block;
+      width: 25px;
+      height: 15px;
+      padding: 5px;
+      background-color: transparent;
+      background-image: url('./pictures/hamburgerButton.svg');
+      border: none;
+    }
   }
 }

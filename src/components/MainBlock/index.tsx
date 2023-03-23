@@ -27,11 +27,13 @@ const MainBlock = () => {
             </a>
           ))}
         </div>
-        <a href='./'>
+        <a className='main-block__auth-link' href='./'>
           <span className='main-block__auth-button label'>
             Trade Now
           </span>
         </a>
+
+        <button className='main-block__hamburger-button' />
       </div>
 
       <div className='main-block__content'>
@@ -52,7 +54,7 @@ const MainBlock = () => {
           </a>
         </div>
 
-        <img alt='bitcoin stand' src={bitcoinStand} />
+        <img className='main-block__content_picture' alt='bitcoin stand' src={bitcoinStand} />
       </div>
 
       <div className='main-block__scroll_container'>

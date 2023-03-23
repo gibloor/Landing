@@ -18,7 +18,7 @@ const Articles = () => {
           return (
             <a href='./' key={article.name}>
               <div className='articles__article'>
-                <img alt={article.name}  src={process.env.PUBLIC_URL + `/articles/${article.name}.png`} />
+                <img alt={article.name} className='articles__article_picture' src={process.env.PUBLIC_URL + `/articles/${article.name}.png`} />
                 <div className='articles__article_block'>
                   <span className='articles__article_title'> {article.title} </span>
                   <span className='articles__article_text'> {article.text} </span>

@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <div className='footer'>
-      <div className='footer__paragraphs' style={{ width: `${columns.length * 250}px` }}>
+      <div className='footer__paragraphs'>
         {columns.map(column => (
           <div key={column.title} className='footer__paragraphs_block'>
             <span className='footer__title'>
@@ -31,7 +31,7 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className='footer__footer' style={{ width: `${columns.length * 250}px` }}>
+      <div className='footer__block'>
         <span className='footer__paragraph'> Copyright 2021, Cryptous </span>
         <div className='footer__social_media'>
           <a href='./'>

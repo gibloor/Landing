@@ -7,7 +7,7 @@ const ShortInfo = () => {
 
   return (
     <div className='short-info'>
-      <span className='headline short-info__title'>
+      <span className='short-info__title'>
         The most trusted cryptocurrency platform
       </span>
 
@@ -17,12 +17,12 @@ const ShortInfo = () => {
             <div className='short-info__paragraph_picture_container'>
               <img alt={paragraph.title} className='short-info__paragraph_picture' src={process.env.PUBLIC_URL + `/shortInfo/${paragraph.name}.png`} />
             </div>
-            <span>
+            <span className='short-info__paragraph_title'>
               {paragraph.title}
             </span>
 
             {paragraph.items.map(item => (
-              <span key={item}>
+              <span className='short-info__paragraph_text' key={item}>
                 {item}
               </span>
             ))}

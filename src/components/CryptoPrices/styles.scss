@@ -1,10 +1,11 @@
 .crypto-prices {
+  width: 90vw;
+  height: 800px;
+  padding: 0 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 800px;
   color: white;
 
   &__title {
@@ -12,12 +13,12 @@
     margin-bottom: 60px;
   }
 
-  &__table, &__tbody {
-    border-collapse: collapse; 
+  &__table {
+    width: 100%;
   }
 
-  &__tbody:first-child > tr {
-    text-align: center;
+  &__table, &__tbody {
+    border-collapse: collapse; 
   }
 
   &__tbody:last-child {
@@ -28,16 +29,20 @@
     border-top: 0.6px solid #BDBDBD;
   }
 
+  // &__tbody > tr:first-child > th {
+  //   text-align: center;
+  // }
+
   &__tbody > tr > th {
-    padding: 25px 0px 25px 65px;
-    text-align: left;
+    padding: 25px;
+    // margin: 25px;
+    // text-align: left;
   }
 
   &__tbody > tr > th:first-child, th:nth-child(2) {
     padding-left: 10px;
   }
   &__tbody > tr > th:last-child {
-    // padding-left: 10px;
     padding-right: 10px;
   }
 
@@ -48,6 +53,12 @@
   &__with-picture_container {
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  &__name_tr {
+    text-align: left;
+    justify-content: left;
   }
 
   &__coin_picture {
@@ -75,6 +86,12 @@
   }
 
   &__volume_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__volume_block {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -100,5 +117,38 @@
 
   &__stock {
     margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .crypto-prices {
+    &__1200hide {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .crypto-prices {
+    &__900hide {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .crypto-prices {
+    &__700hide {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .crypto-prices {
+    &__500hide {
+      display: none;
+    }
   }
 }

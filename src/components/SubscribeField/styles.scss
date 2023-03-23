@@ -1,6 +1,6 @@
 .subscribe-field {
   width: 100vw;
-  height: 420px;
+  padding: 50px 0;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -50,5 +50,33 @@
     margin: 3px;
     border: none;
     cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .subscribe-field {
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__input_container {
+      height: 45px;
+      width: 90%;
+      max-width: 450px;
+    }
+
+    &__input {
+      font-size: 14px;
+    }
+
+    &__button {
+      font-size: 12px;
+    }
   }
 }

@@ -1,27 +1,99 @@
 .app-advertising {
-  width: 100vw;
-  height: 700px;
+  width: 90vw;
+  padding: 50px 5vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: white;
 
   &__block {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    max-width: 45%;
+    width: 45%;
   }
 
   &__title {
+    font-size: 32px;
+    font-weight: 700;
     margin-bottom: 14px;
   }
 
   &__text {
+    font-size: 17px;
     margin-bottom: 50px;
   }
 
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+
   &__button {
+    height: 100%;
     margin-right: 30px;
+  }
+
+  &__button:last-child {
+    margin-right: 0px;
+  }
+
+  &__button > img {
+    height: 100%;
+  }
+
+  &__picture_mobile {
+    display: none;
+  }
+
+  &__picture_screen {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .app-advertising {
+    justify-content: center;
+    text-align: center;
+
+    &__block {
+      width: 80%;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    &__picture_mobile {
+      display: block;
+      width: 50%;
+      margin-bottom: 30px;
+    }
+
+    &__picture_screen {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .app-advertising {
+    &__buttons {
+      height: 45px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .app-advertising {
+    &__buttons {
+      height: 35px;
+    }
   }
 }

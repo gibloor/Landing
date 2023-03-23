@@ -11,27 +11,29 @@ const AppAdvertising = () => {
   return (
     <div className='app-advertising'>
       <div className='app-advertising__block'>
-        <span className='headline app-advertising__title'>
+        <span className='app-advertising__title'>
           Try the future, today. <br />
           Download Crypto
         </span>
 
-        <span className='label app-advertising__text'>
+        <span className='app-advertising__text'>
           Stay connected to the market with our mobile app. Featuring advanced order types and analytical tools for experienced traders, as well as a simple buy & sell interface for those just getting started.
         </span>
+
+        <img className='app-advertising__picture_mobile' alt='Two phones' src={phones} />
 
         <div className='app-advertising__buttons'>
           <a href='./' className='app-advertising__button'>
             <img alt='App store button' src={appStore} />
           </a>
 
-          <a href='./'>
+          <a href='./' className='app-advertising__button'>
             <img alt='Google play button' src={googlePlay} />
           </a>
         </div>
       </div>
 
-      <img alt='Two phones' src={phones} />
+      <img className='app-advertising__picture_screen' alt='Two phones' src={phones} />
     </div>
   )
 }
