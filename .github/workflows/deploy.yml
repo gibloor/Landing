@@ -28,7 +28,7 @@ jobs:
           # ACCESS_TOKEN: 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
           folder: build
           branch: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: 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
 
 
 
