@@ -33,6 +33,8 @@
   &__paragraph_picture_container {
     height: 70px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
   }
 
   &__paragraph_picture {

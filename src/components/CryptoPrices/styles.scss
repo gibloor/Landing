@@ -118,6 +118,16 @@
   &__stock {
     margin-right: 20px;
   }
+
+  &__configs_button {
+    background-image: url('./pictures/dots.svg');
+    width: 3px;
+    height: 14px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 1200px) {

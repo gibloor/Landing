@@ -21,18 +21,29 @@
     height: 40px;
   }
 
-  &__links {
-
-  }
-
   &__link {
     margin: 20px;
+    padding-bottom: 2.5px;
+    transition: ease-in-out 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  &__link:hover {
+    transition: ease-in-out 0.3s;
+    border-color: white;
   }
 
   &__auth-button {
     padding: 10px 20px;
     border: #eb5757 1px solid;
     border-radius: 50px;
+    background-color: #eb575700;
+    transition: ease-in-out 0.3s;
+  }
+
+  &__auth-button:hover {
+    background-color: #eb5757;
+    transition: ease-in-out 0.3s;
   }
 
   &__auth-link {

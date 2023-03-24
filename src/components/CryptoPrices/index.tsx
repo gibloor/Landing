@@ -7,7 +7,6 @@ import arrowUp from './pictures/arrowUp.svg';
 import clearArrowUp from './pictures/clearArrowUp.svg';
 import arrowDown from './pictures/arrowDown.svg';
 import star from './pictures/star.svg';
-import dots from './pictures/dots.svg';
 import badStock from './pictures/badStock.svg';
 import goodStock from './pictures/goodStock.svg';
 
@@ -96,7 +95,7 @@ const CryptoPrices = () => {
               <th className='crypto-prices__1200hide'>
                 <div className='crypto-prices__stock_container'>
                   <img alt='stock' className='crypto-prices__stock' src={crypto.weeklyChanges >= 0 ? goodStock : badStock} />
-                  <img alt='dots' src={dots} />
+                  <button className='crypto-prices__configs_button' />
                 </div>
               </th>
             </tr>
