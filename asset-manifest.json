@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Landing/static/css/main.9bf86b34.css",
-    "main.js": "/Landing/static/js/main.e404682b.js",
+    "main.js": "/Landing/static/js/main.a291afd1.js",
     "static/media/phones.png": "/Landing/static/media/phones.9afa2337fe9dbec9c703.png",
     "static/media/bitcoinStand.png": "/Landing/static/media/bitcoinStand.78a6a22e5edc91f8a407.png",
     "static/media/goodStock.svg": "/Landing/static/media/goodStock.8c4449434917c1324f8e8bb98cef0014.svg",
@@ -20,10 +20,10 @@
     "static/media/arrowUp.svg": "/Landing/static/media/arrowUp.d251698cc1c028d8e66d8e4364c8cebc.svg",
     "static/media/clearArrowUp.svg": "/Landing/static/media/clearArrowUp.ea9f2e8c0bfd1bbb3378f9471512a817.svg",
     "main.9bf86b34.css.map": "/Landing/static/css/main.9bf86b34.css.map",
-    "main.e404682b.js.map": "/Landing/static/js/main.e404682b.js.map"
+    "main.a291afd1.js.map": "/Landing/static/js/main.a291afd1.js.map"
   },
   "entrypoints": [
     "static/css/main.9bf86b34.css",
-    "static/js/main.e404682b.js"
+    "static/js/main.a291afd1.js"
   ]
 }
