@@ -29,14 +29,8 @@
     border-top: 0.6px solid #BDBDBD;
   }
 
-  // &__tbody > tr:first-child > th {
-  //   text-align: center;
-  // }
-
   &__tbody > tr > th {
     padding: 25px;
-    // margin: 25px;
-    // text-align: left;
   }
 
   &__tbody > tr > th:first-child, th:nth-child(2) {
@@ -127,6 +121,7 @@
     background-color: transparent;
     background-repeat: no-repeat;
     cursor: pointer;
+    background-position: center;
   }
 }
 

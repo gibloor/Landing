@@ -20,7 +20,20 @@
   &__container > a {
     width: 30%;
     max-width: 350px;
+    transition: ease-in-out 0.3s;
   }
+
+  // &__container > a {
+  //   width: 29%;
+  //   max-width: 335px;
+  //   transition: ease-in-out 0.3s;
+  // }
+
+  // &__container > a:hover {
+  //   width: 30%;
+  //   max-width: 350px;
+  //   transition: ease-in-out 0.3s;
+  // }
 
   &__container > a:last-child > &__article {
     margin-right: 0px;

@@ -23,12 +23,12 @@ const AppAdvertising = () => {
         <img className='app-advertising__picture_mobile' alt='Two phones' src={phones} />
 
         <div className='app-advertising__buttons'>
-          <a href='./' className='app-advertising__button'>
-            <img alt='App store button' src={appStore} />
+          <a href='./' className='app-advertising__button_container'>
+            <img className='app-advertising__button' alt='App store button' src={appStore} />
           </a>
 
-          <a href='./' className='app-advertising__button'>
-            <img alt='Google play button' src={googlePlay} />
+          <a href='./' className='app-advertising__button_container'>
+            <img className='app-advertising__button' alt='Google play button' src={googlePlay} />
           </a>
         </div>
       </div>

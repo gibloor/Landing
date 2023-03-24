@@ -23,7 +23,6 @@
 
   &__link {
     margin: 20px;
-    padding-bottom: 2.5px;
     transition: ease-in-out 0.3s;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
@@ -46,10 +45,6 @@
     transition: ease-in-out 0.3s;
   }
 
-  &__auth-link {
-
-  }
-
   &__hamburger-button {
     display: none;
   }
@@ -66,7 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 40%;
+    width: 45%;
   }
 
   &__content_picture {

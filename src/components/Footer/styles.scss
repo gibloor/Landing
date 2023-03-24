@@ -38,6 +38,16 @@
     color: #E6E6E6;
   }
 
+  &__paragraph > span {
+    transition: ease-in-out 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+
+  &__paragraph > span:hover {
+    transition: ease-in-out 0.3s;
+    border-color: white;
+  }
+
   &__block {
     width: 100%;
     margin-top: 45px;

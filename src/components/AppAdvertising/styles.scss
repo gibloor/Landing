@@ -25,13 +25,26 @@
 
   &__buttons {
     display: flex;
-    justify-content: center;
     height: 60px;
   }
 
-  &__button {
+  &__button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+    width: 50%;
+  }
+
+  &__button {
+    height: 95%;
     margin-right: 30px;
+    transition: ease-in-out 0.25s;
+  }
+
+  &__button:hover {
+    transition: ease-in-out 0.25s;
+    height: 100%;
   }
 
   &__button:last-child {
