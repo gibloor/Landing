@@ -13,7 +13,6 @@ import './App.scss';
 function App() {
   return (
     <div className='app'>
-      TEST TIME
       <MainBlock />
       <CryptoPrices />
       <ShortInfo />
