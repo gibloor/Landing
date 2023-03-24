@@ -64,8 +64,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     permissions:
-      pages: Landing
-      id-token: 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
+      pages: "Landing"
+      id-token: "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"
     steps:
       - name: checkout
         uses: actions/checkout@v3
