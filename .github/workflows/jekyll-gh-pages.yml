@@ -12,6 +12,7 @@
 
 
 
+
 # name: Build and Deploy
 # on:
 #   push:
@@ -26,7 +27,6 @@
 #     steps:
 #       - name: Checkout 🛎️
 #         uses: actions/checkout@v3
-
 #       - name: Install and Build 
 #         run: |
 #           npm ci
@@ -35,6 +35,7 @@
 #         uses: JamesIves/github-pages-deploy-action@v4
 #         with:
 #           folder: build
+
 
 
 
@@ -50,7 +51,6 @@
 #         with:
 #           node-version: '14'
 #       - run: npm install
-
 
 
 
@@ -90,16 +90,18 @@
 #         uses: actions/deploy-pages@v1
 
 
-name: api-check
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
-jobs:
-  tests-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install
-      - run: npm deploy
+
+
+# name: api-check
+# run-name: ${{ github.actor }} is learning GitHub Actions
+# on: [push]
+# jobs:
+#   tests-check:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: '14'
+#       - run: npm install
+#       - run: npm deploy
