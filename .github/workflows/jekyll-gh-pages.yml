@@ -1,9 +1,7 @@
 name: auto update gh-pages
 
 run-name: ${{ github.actor }} is learning GitHub Actions
-on:
-  push:
-    branches: [ master ]
+on: [ push ]
 jobs:
   tests-check:
     runs-on: ubuntu-latest
