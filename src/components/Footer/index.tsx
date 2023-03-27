@@ -32,7 +32,10 @@ const Footer = () => {
       </div>
 
       <div className='footer__block'>
-        <span className='footer__paragraph'> Copyright 2021, Cryptous </span>
+        <span className='footer__paragraph'>
+          Copyright 2021, Cryptous
+        </span>
+        
         <div className='footer__social_media'>
           <a href='./'>
             <img alt='facebook' src={facebook} />

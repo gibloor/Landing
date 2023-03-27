@@ -1,7 +1,6 @@
 @import '../../App.scss';
 
 .main-block {
-  height: $height;
   padding: 0 5vw;
   color: white;
   background: url('./pictures/bg.svg');
@@ -111,6 +110,30 @@
       background-color: transparent;
       background-image: url('./pictures/hamburgerButton.svg');
       border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-block {
+    background: none;
+
+    &__content {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__content_picture {
+      display: none;
+    }
+
+    &__content_texts {
+      width: 100%;
+      align-items: center;
+    }
+
+    &__scroll_container {
+      display: none;
     }
   }
 }

@@ -1,5 +1,5 @@
 .footer {
-  padding: 50px 5vw;
+  padding: 50px 5vw 10px 5vw;
   background: linear-gradient(45deg, rgba(38,0,116,1) 0%, rgba(78,0,98,1) 100%);
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -54,6 +54,11 @@
     justify-content: space-between;
   }
 
+  &__social_media {
+    display: flex;
+    justify-content: space-around;
+  }
+
   &__social_media > a {
     margin-left: 15px;
   }
@@ -67,6 +72,10 @@
 
     &__paragraphs_block {
       margin-bottom: 30px;
+    }
+
+    &__paragraph > span {
+      margin-bottom: 20px;
     }
   }
 }
